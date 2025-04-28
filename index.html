@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Periodic Table</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://threejs.org/examples/fonts/helvetiker_regular.typeface.json"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="resetButton" class="reset-btn">Reset View</button>
+    <div id="info"></div>
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search for an element..." />
+    </div>
+    <div id="electron-cloud-container"></div>
+    <div id="legend-container"></div>
+
+    <div id="periodic-table-legend-2d">
+        <div class="legend-title">Element Categories</div>
+    
+        <div class="legend-item category-item" data-category="Non-metal">
+            <div class="legend-color non-metal"></div>
+            <div class="legend-label">Non-metal</div>
+        </div>
+        <div class="legend-item category-item" data-category="Noble Gas">
+            <div class="legend-color noble-gas"></div>
+            <div class="legend-label">Noble Gas</div>
+        </div>
+        <div class="legend-item category-item" data-category="Transition metal">
+            <div class="legend-color transition-metal"></div>
+            <div class="legend-label">Transition metal</div>
+        </div>
+        <div class="legend-item category-item" data-category="Post-transition metal">
+            <div class="legend-color post-transition-metal"></div>
+            <div class="legend-label">Post-transition metal</div>
+        </div>
+        <div class="legend-item category-item" data-category="Lanthanide">
+            <div class="legend-color lanthanide"></div>
+            <div class="legend-label">Lanthanide</div>
+        </div>
+        <div class="legend-item category-item" data-category="Actinide">
+            <div class="legend-color actinide"></div>
+            <div class="legend-label">Actinide</div>
+        </div>
+        <div class="legend-item category-item" data-category="Alkali metal">
+            <div class="legend-color alkali-metal"></div>
+            <div class="legend-label">Alkali metal</div>
+        </div>
+        <div class="legend-item category-item" data-category="Alkaline earth metal">
+            <div class="legend-color alkaline-earth-metal"></div>
+            <div class="legend-label">Alkaline earth metal</div>
+        </div>
+        <div class="legend-item category-item" data-category="Metalloid">
+            <div class="legend-color metalloid"></div>
+            <div class="legend-label">Metalloid</div>
+        </div>
+    </div>
+    
+
+    <script src="elementCreator.js"></script>
+    <script src="elementLoader.js"></script>
+    <script src="main.js"></script>
+    <script src="utils.js"></script>
+    <script src="elementInteraction.js"></script>
+    <script src="electronCloud.js"></script>
+    
+
+</body>
+</html>

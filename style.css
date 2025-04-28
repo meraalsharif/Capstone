@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #1a1a1a; /* Dark background for the body */
+}
+
+canvas {
+    display: block;
+}
+
+/* Information Box */
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: Arial, sans-serif;
+    display: none;
+}
+
+/* Button Styles */
+.reset-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.reset-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slightly increase the button size on hover */
+}
+
+/* Search Bar Styles */
+#search-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Additional Styling for Search and Reset Button */
+#realign-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#realign-button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#realign-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Electron Cloud Styles */
+#electron-cloud-container {
+    position: absolute;
+    top: auto;
+    left: 10px;
+    bottom: 60px;
+    width: 200px;
+    height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/*Element categories*/
+#periodic-table-legend-2d {
+    position: fixed;
+    bottom: 4%; 
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+.legend-title {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.legend-label {
+    font-size: 14px;
+}
+
+.non-metal { background-color: #99ff99; }
+.noble-gas { background-color: #82ffff; }
+.transition-metal { background-color: #b9b9ff; }
+.post-transition-metal { background-color: #8a2be2; }
+.lanthanide { background-color: #b9ff82; }
+.actinide { background-color: #ffb6ba; }
+.alkali-metal { background-color: #ff6666; }
+.alkaline-earth-metal { background-color: #ffff66; }
+.metalloid { background-color: #ffb366; }
+
+.legend-item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.category-item.selected {
+    outline: 2px solid #000;
+    border-radius: 5px;
+}
